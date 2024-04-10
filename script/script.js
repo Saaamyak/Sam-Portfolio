@@ -1,8 +1,8 @@
 const skillName = ['HTML-5','CSS-3','JavaScript','C++','Python','Flask','React Js','Mongo Db']
 const skillImg = ['/images/html5.png','/images/css-3.png','/images/Javascript.png','/images/cpp.png','/images/python.png','/images/flask.png','/images/react.png','/images/mongodb.png']
 const skillcol = ['#FFA500','#2196F3','#F7DF1E','#004481','#34709F','#eeeeee','#00D8FF','#1F6600']
-const skillLevel = ['ADVANCE','INTERMEDIATE','INTERMEDIATE','Advance','Intermediate','BASIC','Intermediate','Basic']
-const skillVal = [90,85,75,93,85,90,85,70]
+const skillLevel = ['ADVANCE','ADVANCE','INTERMEDIATE','INTERMEDIATE','Intermediate','BASIC','Intermediate','Basic']
+const skillVal = [90,90,75,75,85,90,80,70]
 $(document).ready(function(){
     $(".container").slideUp(0);
     $(".container").slideDown(1000,"swing");
