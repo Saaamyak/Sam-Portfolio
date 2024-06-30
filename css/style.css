@@ -516,7 +516,7 @@ section .shadow{
 #wavesvg path{
     fill: #2F80ED;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     #wavesvg path{
         fill: #001c89;
     }
@@ -548,7 +548,7 @@ section .shadow{
             stroke: none;
         }
     }
-} */
+}
 @media (prefers-color-scheme: light) {
     @keyframes heading-anim {
         from{
