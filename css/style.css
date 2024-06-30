@@ -212,7 +212,9 @@ nav{
     opacity: 1;
     fill: #000000;
 }
-
+#tryhackme:hover{
+    fill: red;
+}
 #bio{
     font-size:1.2em;
     font-family: 'Lato', sans-serif;
@@ -514,7 +516,7 @@ section .shadow{
 #wavesvg path{
     fill: #2F80ED;
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     #wavesvg path{
         fill: #001c89;
     }
@@ -524,8 +526,8 @@ section .shadow{
         width: 100vw;
         display: flex;
         background: #001c89;  
-        background: -webkit-linear-gradient(to top, #001c89, #110125);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #001c89, #110125); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to top, #001c89, #110125);  
+        background: linear-gradient(to top, #001c89, #110125); 
         text-align: center;
         justify-content: center;
     }
@@ -546,7 +548,7 @@ section .shadow{
             stroke: none;
         }
     }
-}
+} */
 @media (prefers-color-scheme: light) {
     @keyframes heading-anim {
         from{

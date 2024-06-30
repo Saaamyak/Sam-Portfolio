@@ -1,8 +1,8 @@
-const skillName = ['HTML-5','CSS-3','JavaScript','C++','Python','Flask','React Js','Mongo Db','SQL']
-const skillImg = ['/images/html5.png','/images/css-3.png','/images/Javascript.png','/images/cpp.png','/images/python.png','/images/flask.png','/images/react.png','/images/mongodb.png','/images/sql.png']
-const skillcol = ['#FFA500','#2196F3','#F7DF1E','#004481','#34709F','#eeeeee','#00D8FF','#1F6600','#02A8F3']
-const skillLevel = ['ADVANCE','ADVANCE','INTERMEDIATE','INTERMEDIATE','Intermediate','BASIC','Intermediate','Basic','Basic']
-const skillVal = [90,90,75,75,85,90,80,70,70]
+const skillName = ['HTML-5','CSS-3','C++','Python','Flask','React Js','Mongo Db','SQL','Wireshark','Metasploit','NMap','Recon-NG','.NET']
+const skillImg = ['/images/html5.png','/images/css-3.png','/images/cpp.png','/images/python.png','/images/flask.png','/images/react.png','/images/mongodb.png','/images/sql.png','/images/Wireshark.png','/images/Metasploit.png','/images/nmap.png','/images/recon.PNG','/images/ASP_NET.png']
+const skillcol = ['#FFA500','#2196F3','#004481','#34709F','#eeeeee','#00D8FF','#1F6600','#02A8F3','#2E9ECF','#286591','#8CA8B6','#8D8D8D','#375B67']
+const skillLevel = ['ADVANCE','ADVANCE','INTERMEDIATE','Intermediate','BASIC','Intermediate','Basic','Basic','Intermediate','Intermediate','Intermediate','Intermediate','Intermediate']
+const skillVal = [90,90,50,60,50,65,65,70,75,75,75,75,75]
 $(document).ready(function(){
     $(".container").slideUp(0);
     $(".container").slideDown(1000,"swing");
