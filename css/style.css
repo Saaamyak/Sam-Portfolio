@@ -3,6 +3,7 @@
 body{
     overflow-x: hidden;
     color: white;
+    background-color: #01112a;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,9 +19,13 @@ nav{
     min-width: 100vw;
     z-index: 4;
 }
+.container{
+    color: black;
+}
 #header{
     z-index: 4;
     width: 100vw;
+    color: black;
 }
 .scrolled_header{
     background:#00000088;
@@ -39,7 +44,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: white;
+    color: black;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
@@ -54,7 +59,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     margin: 5px;
     border-radius: 50px;
     transition: all 0.5s ease;
@@ -110,12 +115,14 @@ nav{
     background-size: 100% 100%;
     margin-top: 80px;
     margin-left: -8px;
-    height: 600px;
+    height: 780px;
     width: 950px;
 }
 .about-content{
-    height: 435px;
-    width: 610px;
+    margin-top: 90px;
+    margin-left: -5px;
+    height: 460px;
+    width: 630px;
     overflow-y:scroll;
     border-radius: 5px;
     z-index: 1;
@@ -145,8 +152,7 @@ nav{
     fill: transparent;
 }
 #linkedinIcon :nth-child(2){
-    opacity: 0.5;
-    fill: aliceblue;
+    fill: black;
 }
 #leetcodeIcon path{
     fill: aliceblue;
@@ -297,7 +303,7 @@ nav{
 section{
     width: 100vw;
     position: relative;
-    background-color: #151515;
+    background-color: 	#08150f;
 }
 .skill-title{
     position: absolute;
@@ -316,7 +322,7 @@ section .shadow{
     bottom: 100%;
     left: 0;
     z-index: 1 ;
-    background: linear-gradient(to top, #151515 , transparent);
+    background: linear-gradient(to top, #08150f, transparent);
 }
 .white-fade{
     position: absolute;
@@ -324,7 +330,7 @@ section .shadow{
     height: 200px;
     width: 100vw;
     z-index: 2;
-    background: linear-gradient(to bottom, white, transparent);
+    background: linear-gradient(to bottom, #01112a, transparent);
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media screen and (max-width: 1024px) {
@@ -345,15 +351,15 @@ section .shadow{
         background: url(/images/tab.png);
         background-size: 100% 100%;
         margin-top: 80px;
-        height: 840px;
-        width: 600px;
+        height: 940px;
+        width: 750px;
         min-width: 600px;
     }
     .about-content{
-        height: 660px;
-        width: 493px;
-        margin-left: -10px;
-        border-radius: 5px;
+        height: 675px;
+        width: 410px;
+        margin-left: -23px;
+        border-radius: 15px;
         margin-top: 80px;
     }
 
@@ -368,7 +374,8 @@ section .shadow{
 .skill-card{
     position: relative;
     width: 240px;
-    height: 360px;
+    min-height: 360px;
+    padding: 10px 5px;
     margin: 20px auto;
     background-color: #000000;
     border-radius: 40px;
@@ -376,6 +383,10 @@ section .shadow{
     transform-style: preserve-3d;
     transform: perspective(1000px);
     transition: transform 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .skill-img{
     position: absolute;
@@ -383,14 +394,25 @@ section .shadow{
     left: 0;
     width: 120px;
     height: 120px;
-    margin: 80px 60px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
 }
 .progress-border{
     width: 190px;
     height: 190px;
-    margin: 40px 30px;
-    margin-bottom: 10px;
-    transform: rotate(270deg);
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+.svg-container{
+    width: 100%;
+    height: 190px;
+    position: relative;
 }
 .skill-name{
     text-align: center;
@@ -434,16 +456,16 @@ section .shadow{
         background: url(/images/mobile.png);
         background-size: 100% 100%;
         margin-top: 100px;
-        height: 600px;
-        width: 300px;
+        height: 700px;
+        width: 600px;
         min-width: 300px;
     }
     .about-content{
-        height: 553px;
-        width: 255px;
+        height: 577px;
+        width: 230px;
         margin-left: -7px;
         border-radius: 29px;
-        margin-top: 80px;
+        margin-top: 100px;
     }
 }
 
@@ -516,7 +538,7 @@ section .shadow{
 #wavesvg path{
     fill: #2F80ED;
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     #wavesvg path{
         fill: #001c89;
     }
@@ -547,8 +569,8 @@ section .shadow{
             fill: #2F80ED;
             stroke: none;
         }
-    }
-}
+    } 
+}*/
 @media (prefers-color-scheme: light) {
     @keyframes heading-anim {
         from{

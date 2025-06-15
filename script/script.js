@@ -1,8 +1,123 @@
-const skillName = ['HTML-5','CSS-3','C++','Python','Flask','React Js','Mongo Db','SQL','Wireshark','Metasploit','NMap','Recon-NG','.NET']
-const skillImg = ['/images/html5.png','/images/css-3.png','/images/cpp.png','/images/python.png','/images/flask.png','/images/react.png','/images/mongodb.png','/images/sql.png','/images/Wireshark.png','/images/Metasploit.png','/images/nmap.png','/images/recon.PNG','/images/ASP_NET.png']
-const skillcol = ['#FFA500','#2196F3','#004481','#34709F','#eeeeee','#00D8FF','#1F6600','#02A8F3','#2E9ECF','#286591','#8CA8B6','#8D8D8D','#375B67']
-const skillLevel = ['ADVANCE','ADVANCE','INTERMEDIATE','Intermediate','BASIC','Intermediate','Basic','Basic','Intermediate','Intermediate','Intermediate','Intermediate','Intermediate']
-const skillVal = [90,90,50,60,50,65,65,70,75,75,75,75,75]
+// const skillName = ['HTML-5','CSS-3','C++','Python','Flask','React Js','Mongo Db','SQL','Wireshark','Metasploit','NMap','Recon-NG','.NET']
+// const skillImg = ['/images/html5.png','/images/css-3.png','/images/cpp.png','/images/python.png','/images/flask.png','/images/react.png','/images/mongodb.png','/images/sql.png','/images/Wireshark.png','/images/Metasploit.png','/images/nmap.png','/images/recon.PNG','/images/ASP_NET.png']
+// const skillcol = ['#FFA500','#2196F3','#004481','#34709F','#eeeeee','#00D8FF','#1F6600','#02A8F3','#2E9ECF','#286591','#8CA8B6','#8D8D8D','#375B67']
+// const skillLevel = ['ADVANCE','ADVANCE','INTERMEDIATE','Intermediate','BASIC','Intermediate','Basic','Basic','Intermediate','Intermediate','Intermediate','Intermediate','Intermediate']
+// const skillVal = [90,90,50,60,50,65,65,70,75,75,75,75,75]
+const skills = [
+  {
+    "name": "Cortex XDR",
+    "image": "/images/XDR.png",
+    "color": "#04E171",
+    "level": "ADVANCE",
+    "value": 90
+  },
+  {
+    "name": "MITRE ATT&CK",
+    "image": "/images/mitre-MITRE-ATTCK.png",
+    "color": "#2196F3",
+    "level": "ADVANCE",
+    "value": 90
+  },
+  {
+    "name": "YARA Rules",
+    "image": "/images/yara.png",
+    "color": "#C41617",
+    "level": "INTERMEDIATE",
+    "value": 60
+  },
+  {
+    "name": "Python",
+    "image": "/images/python.png",
+    "color": "#34709F",
+    "level": "Advance",
+    "value": 75
+  },
+  {
+    "name": "Regex",
+    "image": "/images/Regex.png",
+    "color": "#eeeeee",
+    "level": "BASIC",
+    "value": 50
+  },
+  {
+    "name": "Splunk",
+    "image": "/images/splunk.png",
+    "color": "#3BA117",
+    "level": "Intermediate",
+    "value": 65
+  },
+  {
+    "name": "Autopsy",
+    "image": "/images/Autopsy.png",
+    "color": "#CA7A26",
+    "level": "Basic",
+    "value": 55
+  },
+  {
+    "name": "DLP",
+    "image": "/images/DLP.png",
+    "color": "#01AE99",
+    "level": "Basic",
+    "value": 30
+  },
+  {
+    "name": "Wireshark",
+    "image": "/images/Wireshark.png",
+    "color": "#2E9ECF",
+    "level": "Intermediate",
+    "value": 75
+  },
+  {
+    "name": "Metasploit",
+    "image": "/images/Metasploit.png",
+    "color": "#286591",
+    "level": "Intermediate",
+    "value": 75
+  },
+  {
+    "name": "NMap",
+    "image": "/images/nmap.png",
+    "color": "#98D3ED",
+    "level": "Intermediate",
+    "value": 75
+  },
+  {
+    "name": "Recon-NG",
+    "image": "/images/recon.PNG",
+    "color": "#8D8D8D",
+    "level": "Intermediate",
+    "value": 75
+  },
+  {
+    "name": "Sophos",
+    "image": "/images/sophos.png",
+    "color": "#4688CB",
+    "level": "Intermediate",
+    "value": 50
+  },
+  {
+    "name": "Windows Forensics",
+    "image": "/images/windows.png",
+    "color": "#4688CB",
+    "level": "Intermediate",
+    "value": 50
+  },
+  {
+    "name": "Linux Forensics",
+    "image": "/images/kali.png",
+    "color": "#B1B1B1",
+    "level": "Advance",
+    "value": 70
+  },
+  {
+    "name": "Networking",
+    "image": "/images/Networking.png",
+    "color": "#04ABEC",
+    "level": "Intermediate",
+    "value": 55
+  },
+]
+
 $(document).ready(function(){
     $(".container").slideUp(0);
     $(".container").slideDown(1000,"swing");
@@ -34,59 +149,106 @@ $(document).ready(function(){
     });
 });
 
-function getCircle(colorhash,val){
-    var svg1 = "http://www.w3.org/2000/svg";
-    var svg_border = document.createElementNS(svg1, 'svg');
-    svg_border.setAttribute('class','progress-border');
-    var circle_main = document.createElementNS(svg1,'circle');
-    circle_main.setAttribute('stroke',colorhash);
-    circle_main.setAttribute('stroke-width',"5");
-    circle_main.setAttribute('r',"90");
-    circle_main.setAttribute('cx',"95");
-    circle_main.setAttribute('cy',"95");
-    circle_main.setAttribute('class','helloDemo');
+// function getCircle(colorhash,val){
+//     var svg1 = "http://www.w3.org/2000/svg";
+//     var svg_border = document.createElementNS(svg1, 'svg');
+//     svg_border.setAttribute('class','progress-border');
+//     var circle_main = document.createElementNS(svg1,'circle');
+//     circle_main.setAttribute('stroke',colorhash);
+//     circle_main.setAttribute('stroke-width',"5");
+//     circle_main.setAttribute('r',"90");
+//     circle_main.setAttribute('cx',"95");
+//     circle_main.setAttribute('cy',"95");
+//     circle_main.setAttribute('class','helloDemo');
     
-    let radius = 90;
-    let circumference = Math.PI*(radius*2);
-    if (val < 0) { val = 0;}
-    if (val > 100) { val = 100;}
-    let pct = ((100-val)/100)*circumference;
-    circle_main.style.strokeDashoffset=pct+"";
+//     let radius = 90;
+//     let circumference = Math.PI*(radius*2);
+//     if (val < 0) { val = 0;}
+//     if (val > 100) { val = 100;}
+//     let pct = ((100-val)/100)*circumference;
+//     circle_main.style.strokeDashoffset=pct+"";
+
+//     svg_border.appendChild(circle_main);
+//     const svg_container= document.createElement('div');
+//     svg_container.className = 'svg-container';
+//     svg_container.appendChild(svg_border);
+//     return svg_container;
+// }
+function getCircle(colorhash, val) {
+    const svgNS = "http://www.w3.org/2000/svg";
+    
+    const svg_border = document.createElementNS(svgNS, 'svg');
+    svg_border.setAttribute('class', 'progress-border');
+    svg_border.setAttribute('width', '190'); // 2 * cx
+    svg_border.setAttribute('height', '190'); // 2 * cy
+
+    const circle_main = document.createElementNS(svgNS, 'circle');
+    circle_main.setAttribute('stroke', colorhash);
+    circle_main.setAttribute('stroke-width', "5");
+    circle_main.setAttribute('r', "90");
+    circle_main.setAttribute('cx', "95");
+    circle_main.setAttribute('cy', "95");
+    circle_main.setAttribute('class', 'helloDemo');
+
+    // Rotate stroke start position to top
+    circle_main.setAttribute('transform', 'rotate(-90 95 95)');
+
+    // Set stroke-dasharray and offset for progress effect
+    const radius = 90;
+    const circumference = Math.PI * (radius * 2);
+    const clampedVal = Math.min(100, Math.max(0, val));
+    const offset = ((100 - clampedVal) / 100) * circumference;
+
+    circle_main.setAttribute('fill', 'none');
+    circle_main.style.strokeDasharray = `${circumference}`;
+    circle_main.style.strokeDashoffset = `${offset}`;
 
     svg_border.appendChild(circle_main);
-    return svg_border;
+
+    const svg_container = document.createElement('div');
+    svg_container.className = 'svg-container';
+    svg_container.appendChild(svg_border);
+
+    return svg_container;
 }
 
-function createSkillIcons(){
-    var skill_container = document.querySelector('.skills-container');
-    for(let i=0;i<skillName.length;i++)
-    {
-        let currcol = skillcol[i];
-        var card = document.createElement('div');
-        card.setAttribute("class","skill-card");
-        card.addEventListener("mouseenter", cardMouseEnter);
-        card.addEventListener("mousemove", cardMouseMove);
-        card.addEventListener("mouseleave", cardMouseLeave);
-        card.style.boxShadow = currcol+' 0px 0px 20px';
-        var img = document.createElement('img');
-        img.setAttribute('src',skillImg[i]);
-        img.setAttribute('class','skill-img');
-        img.setAttribute('alt',"Failed to Load Image");
-        var progress_bar = getCircle(currcol,skillVal[i]);
-        var skill_text = document.createElement('h3');
-        skill_text.innerHTML = skillName[i];
-        skill_text.setAttribute('class','skill-name');
-        skill_text.style.color = currcol;
-        var skill_level = document.createElement('h4');
-        skill_level.innerHTML = skillLevel[i];
-        skill_level.setAttribute('class','skill-level');
-        card.appendChild(progress_bar);
-        card.appendChild(img);
-        card.appendChild(skill_text);
-        card.appendChild(skill_level);
-        skill_container.appendChild(card);
-        progressObserver.observe(progress_bar);
-    }
+
+function createSkillIcons() {
+  const skill_container = document.querySelector('.skills-container');
+  
+  skills.forEach(skill => {
+    const card = document.createElement('div');
+    card.className = "skill-card";
+    card.style.boxShadow = `${skill.color} 0px 0px 20px`;
+
+    card.addEventListener("mouseenter", cardMouseEnter);
+    card.addEventListener("mousemove", cardMouseMove);
+    card.addEventListener("mouseleave", cardMouseLeave);
+
+    const progress_bar = getCircle(skill.color, skill.value);
+
+    const img = document.createElement('img');
+    img.src = skill.image;
+    img.className = 'skill-img';
+    img.alt = "Failed to Load Image";
+
+    const skill_text = document.createElement('h3');
+    skill_text.textContent = skill.name;
+    skill_text.className = 'skill-name';
+    skill_text.style.color = skill.color;
+
+    const skill_level = document.createElement('h4');
+    skill_level.textContent = skill.level;
+    skill_level.className = 'skill-level';
+
+    card.appendChild(progress_bar);
+    progress_bar.appendChild(img);
+    card.appendChild(skill_text);
+    card.appendChild(skill_level);
+    skill_container.appendChild(card);
+
+    progressObserver.observe(progress_bar);
+  });
 }
 
 $(document).on('scroll', function(){
