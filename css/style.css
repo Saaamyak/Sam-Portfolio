@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-body{
-    overflow-x: hidden;
-    color: white;
-    background-color: #01112a;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* --- Unified Modern Color Scheme for the Whole Website --- */
+:root {
+    --bg-main: #181f2a;
+    --bg-secondary: #232b3a;
+    --bg-hero: linear-gradient(135deg, #232b3a 60%, #3fa7f4 100%);
+    --text-main: #f5f6fa;
+    --text-secondary: #bfc9d1;
+    --accent: #3fa7f4;
+    --accent-hover: #2d8fd6;
+    --border: #3fa7f4;
+    --highlight: #ffa500;
 }
-nav{
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Poppins', 'Lato', 'Noto Sans JP', 'Open Sans', sans-serif;
+}
+nav {
+    background: var(--bg-secondary);
+    color: var(--text-main);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     width: 100vw;
     position: fixed;
     display: flex;
@@ -35,7 +46,7 @@ nav{
     letter-spacing: 3px; 
     font-size: 20px;
     font-weight: bold;
-    
+    color: var(--accent);
 }
 .nav-links{
     display: flex;
@@ -44,12 +55,16 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color: black;
+    color: var(--text-main);
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
+    transition: color 0.2s;
+}
+.nav-links a:hover {
+    color: var(--accent);
 }
 .burger{
     cursor: pointer;
@@ -59,7 +74,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: black;
+    background: var(--accent);
     margin: 5px;
     border-radius: 50px;
     transition: all 0.5s ease;
@@ -69,9 +84,7 @@ nav{
     height: 70vh;
     width: 100vw;
     display: flex;
-    background: #56CCF2;  
-    background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(135deg, var(--accent) 0%, var(--bg-secondary) 100%);
     text-align: center;
     justify-content: center;
 }
@@ -86,6 +99,12 @@ nav{
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
+  line-height: 1em;
+  height: 1em;
+  /* Prevents top of letters from being visible during animation */
+  clip-path: inset(0 0 0 0);
+  /* fallback for browsers not supporting clip-path */
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
 .ml6 .letter {
@@ -113,19 +132,22 @@ nav{
     position: absolute;
     background-image: url(/images/laptop.png);
     background-size: 100% 100%;
-    margin-top: 80px;
+    margin-top: 140px;
     margin-left: -8px;
-    height: 780px;
-    width: 950px;
+    height: 960px;
+    width: 1100px;
 }
 .about-content{
-    margin-top: 90px;
+    margin-top: 95px;
     margin-left: -5px;
-    height: 460px;
-    width: 630px;
+    height: 480px;
+    width: 650px;
     overflow-y:scroll;
     border-radius: 5px;
     z-index: 1;
+    background: var(--bg-secondary);
+    color: var(--text-main);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
 .logo{
     font-size: 18px;
@@ -466,6 +488,24 @@ section .shadow{
         margin-left: -7px;
         border-radius: 29px;
         margin-top: 100px;
+    }
+    nav {
+        flex-direction: column;
+        min-height: 12vh;
+    }
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content {
+        width: 95vw;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .screen {
+        width: 100vw;
+        height: auto;
     }
 }
 
