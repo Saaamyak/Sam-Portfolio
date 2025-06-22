@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:title" content="Samyak Goel" />
+    <meta property="og:description" content="My Portfolio Website. Welcome To My World" />
+
+    <meta name="theme-color" content="#56CCF2">
+    <!-- <meta name="color-scheme" content="dark light"> -->
+    <meta name="description" content="My Portfolio Website. Welcome To My World">
+    <meta name="author" content="Samyak Goel">
+    <meta name="keywords" content="Samyak Goel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chat-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title> Samyak Goel</title>
+</head>
+<body>
+  <div class="spotlight-container">
+    <div class="spotlight-box">
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        class="spotlight-input"
+        placeholder="Search..."
+        id="searchInput"
+        autocomplete="off"
+      />
+      <span class="clear-icon hidden" id="clearIcon">✕</span>
+
+    </div>
+    <div class="suggestions-box hidden" id="suggestionsBox">
+      <div class="skeleton" id="loader"></div>
+      <ul class="suggestions hidden" id="suggestionsList">
+        <div class="suggestion_list_items">
+        <li>Who is Samyak?</li>
+        <li>What does Samyak Do?</li>
+        <li>Is Samyak a Hacker?</li>
+        </div>
+        <div class="ai_response" id="result">
+
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script/chat.js"></script>
+</body>
+</html>
