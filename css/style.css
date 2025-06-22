@@ -66,7 +66,7 @@ nav{
 }
 #focus-container-bg{
     margin: 0;
-    height: 70vh;
+    min-height: 70vh;
     width: 100vw;
     display: flex;
     background: #56CCF2;  
@@ -102,30 +102,32 @@ nav{
     position: relative;
     align-items: center;
     min-height: 80vh;
-    height: auto;
+    height: 880px;
     display: flex;
     width: 100vw;
     min-width: 100vw;
     justify-content: center;
     overflow-x: hidden;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }
 .screen{
     position: absolute;
     background-image: url(/images/laptop.png);
     background-size: 100% 100%;
-    margin-top: 80px;
     margin-left: -8px;
-    height: 780px;
-    width: 950px;
+    height: 880px;
+    width: 1050px;
 }
 .about-content{
-    margin-top: 90px;
-    margin-left: -5px;
-    height: 460px;
-    width: 630px;
+    margin-top: -60px;
+    margin-left: -10px;
+    height: 462px;
+    width: 640px;
     overflow-y:scroll;
     border-radius: 5px;
     z-index: 1;
+    border: none;
 }
 .logo{
     font-size: 18px;
@@ -355,6 +357,10 @@ section .shadow{
         width: 750px;
         min-width: 600px;
     }
+    .screen-wrapper{
+        height: calc(940px + 80px);
+        padding-bottom: 250px;
+    }
     .about-content{
         height: 675px;
         width: 410px;
@@ -460,6 +466,12 @@ section .shadow{
         width: 600px;
         min-width: 300px;
     }
+    .screen-wrapper{
+        height: calc(700px + 200px);
+        padding-bottom: 0px;
+        /* margin-bottom: 100px; */
+        box-sizing: border-box;
+    }
     .about-content{
         height: 577px;
         width: 230px;
@@ -494,7 +506,7 @@ section .shadow{
     transform: rotate(45deg) translate(-5px,-6px); 
 }
 .about-us-container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
 }
@@ -583,4 +595,7 @@ section .shadow{
             stroke: none;
         }
     }
+}
+.footer-content{
+    text-align: center;
 }

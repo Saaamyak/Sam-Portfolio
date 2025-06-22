@@ -24,6 +24,11 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
+.fa svg{
+    width: 25px;
+    height: 25px;
+    fill: aliceblue;
+}
 #title{
     position: absolute;
     top: 0;
