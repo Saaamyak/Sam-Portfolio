@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100vh;
+ min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,8 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 20s ease infinite;
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Roboto, sans-serif;
+  padding: 50px 0;
+  box-sizing: border-box;
 }
 
 
@@ -21,6 +23,7 @@ body {
 .spotlight-container {
   width: 500px;
   max-width: 90%;
+  height: 100%;
 }
 
 .spotlight-box {

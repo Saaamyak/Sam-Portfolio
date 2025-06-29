@@ -83,7 +83,7 @@ const show_ai_response = async () => {
     suggestion_list_item.classList.add("hidden");
     suggestionsList.classList.remove("hidden");
     const resultDiv = document.getElementById("result");
-    resultDiv.innerText = data.answer;
+    resultDiv.innerHTML = marked.parse(data.answer);
     resultDiv.classList.remove("hidden");
 }
 searchInput.addEventListener("keydown", (e) => {

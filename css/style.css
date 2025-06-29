@@ -260,6 +260,7 @@ nav{
         width: 50vw;
         transform: translateX(200%);
         border-radius: 20px;
+        padding-top: 40px;
     }
     .nav-links li{
         opacity: 0;
