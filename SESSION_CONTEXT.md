@@ -33,6 +33,8 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 | Skills | Honest levels (Core / Established / Emerging), never percentage bars |
 | AI chatbot | Removed (it depended on an external Vercel backend) |
 | Contact | Email + LinkedIn + Medium only. No phone/WhatsApp on the site |
+| Work section | Every role splits Client work (by client + product) from Company work |
+| Top nav | No resume button; resume is linked in the hero and contact only |
 | Confidentiality | Client stories stay high-level: no hostnames, client-specific query logic, or incident dates |
 | Credentials to Netlify | Never ask for or share a password. Use GitHub auto-deploy, `netlify login` (browser), or a token the owner sets themselves |
 
@@ -78,3 +80,4 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - **2026-10-07:** Review rounds 1–2 done; fixes applied. Samyak supplied a new portrait `SAM.jpeg`. SESSION_CONTEXT.md and POA.md added as standing handover docs.
 - **2026-10-07:** Samyak decided the site serves the same resume PDF (phone number included), and Writing links only to the Medium profile, not to individual articles.
 - **2026-10-07:** Security pass before push: no secrets in the tree or git history, no GPS/EXIF in the photo, all external links `noopener`, no inline scripts, styles or `innerHTML`. Added security.txt, 404 page, robots/sitemap and `X-Permitted-Cross-Domain-Policies`; tightened .gitignore. The first push was blocked by expired GitHub credentials; fixed by installing `gh` and logging in through the browser. Branch pushed and PR #1 opened.
+- **2026-10-07:** Per Samyak: each role now separates **Client work** (Beltron = Trend Micro Vision One only; MCX = Cortex XDR only) from **Company work** (F1 Infotech = FortiGate network security; Swan = internal SOC/IR process). Resume button removed from the top nav; the resume link stays in the hero and contact. Approved to merge PR #1 to go live; further design improvements come after.
