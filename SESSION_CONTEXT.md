@@ -62,11 +62,12 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - Known partials: the contact portrait still has a light background (needs a dark-ground photo, or a cut-out); the ridge in the "Taking apart an XDR bypass" card is faint.
 - Portrait is now Samyak's `public/assets/SAM.jpeg` (400×400), shown as a 112px circle.
 - DESIGN.md (design system record) is written; read it before changing any visual detail.
-- Branch `redesign` is committed locally (2026-10-07). The push failed because GitHub auth on this Mac is expired or invalid. Next: Samyak re-authenticates (`gh auth login` or a new PAT), push, open the PR, Netlify Deploy Preview, approve, merge to `main`.
+- Branch `redesign` pushed; PR #1 open: https://github.com/Saaamyak/Sam-Portfolio/pull/1. Next: Netlify Deploy Preview → Samyak reviews → merge to `main`.
+- GitHub CLI (`gh`) is installed on the Mac and logged in as Saaamyak; git pushes use it.
 
 ## Open questions for Samyak
 
-1. Re-authenticate GitHub on this Mac so `redesign` can be pushed, then open the PR so Netlify builds a Deploy Preview.
+1. Review the Netlify Deploy Preview for PR #1 on phone and desktop; approve the merge to `main`.
 
 ## Decision log
 
@@ -76,4 +77,4 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - **2026-10-07:** New resume `Sr.Security_Engineer_Samyak_Goel.pdf` adopted. Certification "Verify" links and the Medium URL taken from it.
 - **2026-10-07:** Review rounds 1–2 done; fixes applied. Samyak supplied a new portrait `SAM.jpeg`. SESSION_CONTEXT.md and POA.md added as standing handover docs.
 - **2026-10-07:** Samyak decided the site serves the same resume PDF (phone number included), and Writing links only to the Medium profile, not to individual articles.
-- **2026-10-07:** Security pass before push: no secrets in the tree or git history, no GPS/EXIF in the photo, all external links `noopener`, no inline scripts, styles or `innerHTML`. Added security.txt, 404 page, robots/sitemap and `X-Permitted-Cross-Domain-Policies`; tightened .gitignore. Push blocked by expired GitHub credentials on the Mac.
+- **2026-10-07:** Security pass before push: no secrets in the tree or git history, no GPS/EXIF in the photo, all external links `noopener`, no inline scripts, styles or `innerHTML`. Added security.txt, 404 page, robots/sitemap and `X-Permitted-Cross-Domain-Policies`; tightened .gitignore. The first push was blocked by expired GitHub credentials; fixed by installing `gh` and logging in through the browser. Branch pushed and PR #1 opened.

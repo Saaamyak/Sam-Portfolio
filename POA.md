@@ -55,8 +55,8 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 
 - [x] Security pass (secrets, metadata, links, headers) + security.txt, 404, robots/sitemap
 - [x] Commit branch `redesign`
-- [ ] Push branch (blocked: GitHub login on the Mac needs refreshing)
-- [ ] Open PR: https://github.com/Saaamyak/Sam-Portfolio/compare/main...redesign
+- [x] Push branch
+- [x] Open PR #1: https://github.com/Saaamyak/Sam-Portfolio/pull/1
 - [ ] Netlify deploy preview → Samyak reviews on phone and desktop
 - [ ] Check headers at securityheaders.com (target: A)
 - [ ] Merge to `main` → live at samyakportfolio.netlify.app
