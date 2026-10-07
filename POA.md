@@ -57,7 +57,9 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] Commit branch `redesign`
 - [x] Push branch
 - [x] Open PR #1: https://github.com/Saaamyak/Sam-Portfolio/pull/1
-- [ ] Netlify deploy preview → Samyak reviews on phone and desktop
+- [x] Netlify deploy preview built: https://deploy-preview-1--samyakportfolio.netlify.app
+- [x] Verified on preview: security headers, redirects, 404, docs not public
+- [ ] Samyak reviews the preview on phone and desktop
 - [ ] Check headers at securityheaders.com (target: A)
 - [ ] Merge to `main` → live at samyakportfolio.netlify.app
 

@@ -62,7 +62,7 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - Known partials: the contact portrait still has a light background (needs a dark-ground photo, or a cut-out); the ridge in the "Taking apart an XDR bypass" card is faint.
 - Portrait is now Samyak's `public/assets/SAM.jpeg` (400×400), shown as a 112px circle.
 - DESIGN.md (design system record) is written; read it before changing any visual detail.
-- Branch `redesign` pushed; PR #1 open: https://github.com/Saaamyak/Sam-Portfolio/pull/1. Next: Netlify Deploy Preview → Samyak reviews → merge to `main`.
+- Branch `redesign` pushed; PR #1 open: https://github.com/Saaamyak/Sam-Portfolio/pull/1. Deploy Preview: https://deploy-preview-1--samyakportfolio.netlify.app (headers, redirects and 404s verified; repo docs return 404). Next: Samyak reviews → merge to `main`.
 - GitHub CLI (`gh`) is installed on the Mac and logged in as Saaamyak; git pushes use it.
 
 ## Open questions for Samyak
