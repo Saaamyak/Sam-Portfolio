@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "public/index.html"
+        ],
+        "createdAt": "2026-10-07T15:33:55.599Z",
+        "reason": "Claude triage: only remaining hit is 1.0-1.1 leading on 40-96px display headings (Apple keynote register the user chose); all body copy >=1.4"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public/index.html"
+        ],
+        "createdAt": "2026-10-07T15:33:55.617Z",
+        "reason": "Claude triage: hits are the edge-to-edge elevation SVG and hairline-ruled role rows that carry 28-56px padding, verified in desktop.png"
+      },
+      {
+        "rule": "clipped-overflow-container",
+        "value": "*",
+        "files": [
+          "public/index.html"
+        ],
+        "createdAt": "2026-10-07T15:33:55.632Z",
+        "reason": "Claude triage: body overflow-x: clip only prevents horizontal scroll from full-bleed ridge layers"
+      }
+    ]
+  }
+}
