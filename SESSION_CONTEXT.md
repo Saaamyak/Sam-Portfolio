@@ -59,17 +59,14 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 
 ## Current state
 
-- The redesign is built on branch **`redesign`**. `main` (the live site) is untouched.
-- Design review: two rounds done (the budget). Round 1 found 8 fixes, all applied. Round 2 scored 6 resolved and 2 partial, plus 2 regressions, which were fixed (the Writing titles now read as plain text, and the elevation line is always drawn).
-- Known partials: the contact portrait still has a light background (needs a dark-ground photo, or a cut-out); the ridge in the "Taking apart an XDR bypass" card is faint.
-- Portrait is now Samyak's `public/assets/SAM.jpeg` (400×400), shown as a 112px circle.
-- DESIGN.md (design system record) is written; read it before changing any visual detail.
-- Branch `redesign` pushed; PR #1 open: https://github.com/Saaamyak/Sam-Portfolio/pull/1. Deploy Preview: https://deploy-preview-1--samyakportfolio.netlify.app (headers, redirects and 404s verified; repo docs return 404). Next: Samyak reviews → merge to `main`.
-- GitHub CLI (`gh`) is installed on the Mac and logged in as Saaamyak; git pushes use it.
+- **Live:** the redesign is on `main` and deployed at https://samyakportfolio.netlify.app (PR #1 merged 2026-10-07). Headers, redirects, 404 and private-doc 404s were verified on production.
+- Work happens on a branch, then a PR (Netlify builds a Deploy Preview), then a merge to `main`. `gh` is installed on the Mac and logged in as Saaamyak.
+- Known partials: the contact portrait has a light background (a dark-ground photo would fix it); the ridge in the XDR field-note card is faint.
+- DESIGN.md is the design system record; read it before changing any visual detail. Its tokens are coarser than the CSS (the detector flags some drift); refresh it when doing the next design round.
 
 ## Open questions for Samyak
 
-1. Review the Netlify Deploy Preview for PR #1 on phone and desktop; approve the merge to `main`.
+1. What should the next round of design improvements be? (Samyak has ideas to share.)
 
 ## Decision log
 
@@ -81,3 +78,4 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - **2026-10-07:** Samyak decided the site serves the same resume PDF (phone number included), and Writing links only to the Medium profile, not to individual articles.
 - **2026-10-07:** Security pass before push: no secrets in the tree or git history, no GPS/EXIF in the photo, all external links `noopener`, no inline scripts, styles or `innerHTML`. Added security.txt, 404 page, robots/sitemap and `X-Permitted-Cross-Domain-Policies`; tightened .gitignore. The first push was blocked by expired GitHub credentials; fixed by installing `gh` and logging in through the browser. Branch pushed and PR #1 opened.
 - **2026-10-07:** Per Samyak: each role now separates **Client work** (Beltron = Trend Micro Vision One only; MCX = Cortex XDR only) from **Company work** (F1 Infotech = FortiGate network security; Swan = internal SOC/IR process). Resume button removed from the top nav; the resume link stays in the hero and contact. Approved to merge PR #1 to go live; further design improvements come after.
+- **2026-10-07:** PR #1 merged; the new site is live on samyakportfolio.netlify.app.

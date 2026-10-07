@@ -51,7 +51,7 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] New portrait `SAM.jpeg` wired in
 - [x] Write `DESIGN.md` + `.impeccable/design.json` (design system record)
 
-## Phase 5: Ship ⏳
+## Phase 5: Ship ✅
 
 - [x] Security pass (secrets, metadata, links, headers) + security.txt, 404, robots/sitemap
 - [x] Commit branch `redesign`
@@ -61,7 +61,7 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] Verified on preview: security headers, redirects, 404, docs not public
 - [x] Samyak reviewed the preview → split client/company work per role, removed nav Resume button
 - [ ] Check headers at securityheaders.com (target: A)
-- [ ] Merge to `main` → live at samyakportfolio.netlify.app
+- [x] Merge to `main` → live at samyakportfolio.netlify.app (2026-10-07)
 
 ## Next: design improvements (after go-live)
 
