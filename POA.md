@@ -3,7 +3,7 @@
 > A living checklist. Tick items as they finish and add new ones at the bottom of the right phase.
 > **Keep it current** together with [SESSION_CONTEXT.md](SESSION_CONTEXT.md).
 
-_Last updated: 2026-10-07 (evening)_
+_Last updated: 2026-10-08_
 
 ## Goal
 
@@ -62,6 +62,12 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] Samyak reviewed the preview → split client/company work per role, removed nav Resume button
 - [ ] Check headers at securityheaders.com (target: A)
 - [x] Merge to `main` → live at samyakportfolio.netlify.app (2026-10-07)
+
+## Repo hygiene ✅ (2026-10-08)
+
+- [x] Internal files (`.impeccable/`, `PRODUCT.md`, `DESIGN.md`) kept local only
+- [x] README.md added
+- [x] Merged/old branches deleted (`redesign`, `Test-Portfolio`)
 
 ## Next: design improvements (after go-live)
 

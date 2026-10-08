@@ -4,7 +4,7 @@
 > **Keep it current:** update "Current state" and "Decision log" at the end of every working session.
 > This repo is public on GitHub, so do not put secrets, passwords, tokens, or private phone numbers in this file.
 
-_Last updated: 2026-10-07 (evening)_
+_Last updated: 2026-10-08_
 
 ## What this is
 
@@ -21,7 +21,7 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - **Before:** Security Engineer, Swan Solutions & Services (12/2024–06/2026, Mumbai). Cortex XDR lead at client MCX: 36+ XQL detection queries, analysed a real XDR bypass (PowerShell / AMSI bypass / COM injection), Palo Alto TAC coordination, built the internal SOC IR process.
 - **Shape:** deep in Endpoint → EDR/XDR → Detection → Hunting → IR. Established in network perimeter. Emerging in memory forensics, malware analysis and reverse engineering. Honest about breadth: about 1.9 years of experience. Long-term goal: CISO.
 - **Personality / taste:** INFJ (reflective, depth over noise). Apple fan who wants Apple-level precision, merged with a security identity.
-- Full product truth lives in [PRODUCT.md](PRODUCT.md).
+- Full product truth lives in `PRODUCT.md` (local only; not on GitHub because it holds a personal career self-assessment).
 
 ## Key decisions (do not reopen without asking Samyak)
 
@@ -52,10 +52,11 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 | `netlify.toml` | Publish dir, redirects, security headers (CSP, HSTS, etc.) |
 | `public/.well-known/security.txt` | How to report a security issue (expires 2027-10-07; renew yearly) |
 | `public/404.html`, `robots.txt`, `sitemap.xml` | Not-found page and search-engine files |
-| `PRODUCT.md` | Product truth: who, why, evidence, what must never be claimed |
-| `.impeccable/` | Design-tool state: direction contract (`surfaces/`), detector config, review captures |
+| `PRODUCT.md` | Product truth: who, why, evidence, what must never be claimed (**local only**) |
+| `.impeccable/` | Design-tool state: direction contract, detector config, review captures (**local only**) |
 | `POA.md` | Plan of action and progress checklist |
-| `DESIGN.md` | Design system: colours, type scale, spacing, components, rules |
+| `DESIGN.md` | Design system: colours, type scale, spacing, components, rules (**local only**) |
+| `README.md` | Public repo overview: stack, security, structure |
 
 ## Current state
 
@@ -79,3 +80,4 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - **2026-10-07:** Security pass before push: no secrets in the tree or git history, no GPS/EXIF in the photo, all external links `noopener`, no inline scripts, styles or `innerHTML`. Added security.txt, 404 page, robots/sitemap and `X-Permitted-Cross-Domain-Policies`; tightened .gitignore. The first push was blocked by expired GitHub credentials; fixed by installing `gh` and logging in through the browser. Branch pushed and PR #1 opened.
 - **2026-10-07:** Per Samyak: each role now separates **Client work** (Beltron = Trend Micro Vision One only; MCX = Cortex XDR only) from **Company work** (F1 Infotech = FortiGate network security; Swan = internal SOC/IR process). Resume button removed from the top nav; the resume link stays in the hero and contact. Approved to merge PR #1 to go live; further design improvements come after.
 - **2026-10-07:** PR #1 merged; the new site is live on samyakportfolio.netlify.app.
+- **2026-10-08:** Repo cleanup per Samyak: `.impeccable/`, `PRODUCT.md` and `DESIGN.md` untracked (kept locally, gitignored; still in older git history). Added README.md. Deleted merged `redesign` branch and old `Test-Portfolio` branch (tip was 67c20ad "Testing").
