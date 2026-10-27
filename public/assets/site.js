@@ -77,12 +77,16 @@
     const target = parseInt(el.dataset.count, 10);
     const duration = target > 1 ? 1400 : 600;
     const t0 = performance.now();
+    let done = false;
     const step = (t) => {
+      if (done) return;
       const k = Math.min((t - t0) / duration, 1);
       const eased = 1 - Math.pow(1 - k, 4);
       el.textContent = String(Math.round(eased * target));
-      if (k < 1) requestAnimationFrame(step);
+      if (k < 1) requestAnimationFrame(step); else done = true;
     };
     requestAnimationFrame(step);
+    // If animation frames are throttled (low power, background tab), still land on the real number.
+    setTimeout(() => { done = true; el.textContent = String(target); }, duration + 150);
   }
 })();
