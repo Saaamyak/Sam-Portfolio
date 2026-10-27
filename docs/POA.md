@@ -89,6 +89,7 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] Nav aligned with the content edge
 - [x] Counters: fallback so they never stick on a wrong number; real values for screen readers
 - [x] Field-note lead card: ridge no longer behind the text on mobile
+- [x] Stale-CSS bug from Samyak's recording: assets revalidate every visit; CSS/JS versioned with `?v=`
 - [ ] Preview (PR #3) → Samyak approves → merge
 
 ## Next: design improvements (after go-live)
