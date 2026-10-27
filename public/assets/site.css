@@ -230,6 +230,25 @@ section:not(.hero) { padding: var(--section) var(--gutter) 0; }
 .note__tags { color: var(--ink-3); font-size: 0.9375rem; }
 .note .link { margin-top: auto; }
 
+/* ---------- Projects ---------- */
+.project { max-width: var(--measure); margin: clamp(48px, 7vw, 80px) auto 0; }
+.project__shot { margin: 0; border-radius: var(--radius); overflow: hidden; background: var(--raised); box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.9), 0 0 0 1px var(--hairline); }
+.project__shot img { width: 100%; height: auto; }
+.project__head { margin-top: clamp(40px, 5vw, 64px); display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 16px clamp(24px, 4vw, 64px); align-items: start; }
+.project__title { font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1.04; letter-spacing: -0.035em; font-weight: 700; }
+.project__title span { display: block; color: var(--ink-2); font-weight: 600; }
+.project__lede { font-size: clamp(1.1875rem, 2vw, 1.5rem); line-height: 1.45; letter-spacing: -0.015em; color: var(--ink-2); text-wrap: pretty; }
+.project__links { grid-column: 2; display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 1.1875rem; }
+.specs { margin: clamp(40px, 5vw, 56px) 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 4vw, 48px); padding-top: 28px; border-top: 1px solid var(--hairline); }
+.spec dt { font-size: 1.1875rem; font-weight: 600; letter-spacing: -0.015em; color: var(--ink); }
+.spec dd { margin: 8px 0 0; color: var(--ink-2); line-height: 1.5; }
+.spec code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.9em; color: var(--ink); }
+.project__pair { margin-top: clamp(40px, 5vw, 64px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.project__pair figure { margin: 0; }
+.project__pair img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: 0 0; background: var(--raised); border-radius: var(--radius); box-shadow: 0 0 0 1px var(--hairline); }
+.project__pair figcaption { margin-top: 14px; color: var(--ink-3); font-size: 0.9375rem; }
+.project__meta { margin-top: 32px; color: var(--ink-3); max-width: 70ch; }
+
 /* ---------- Writing ---------- */
 .shelves { max-width: var(--measure); margin: clamp(48px, 7vw, 80px) auto 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px clamp(24px, 4vw, 56px); }
 .shelf__title { font-size: 0.875rem; font-weight: 600; color: var(--ink-3); padding-bottom: 14px; border-bottom: 1px solid var(--hairline); }
@@ -275,6 +294,10 @@ section.contact { position: relative; padding-bottom: clamp(200px, 26vw, 360px);
   .role__meta { display: flex; gap: 12px; }
   .role__place::before { content: "· "; }
   .bento { grid-template-columns: 1fr; }
+  .project__head { grid-template-columns: 1fr; }
+  .project__links { grid-column: auto; }
+  .specs { grid-template-columns: 1fr; }
+  .project__pair { grid-template-columns: 1fr; }
   .note--lead { grid-row: auto; min-height: 380px; }
   .shelves { grid-template-columns: 1fr; gap: 40px; }
   .cred-list { grid-template-columns: 1fr; }

@@ -30,7 +30,8 @@
           <li class="wide"><a href="#evidence">Evidence</a></li>
           <li class="wide"><a href="#depth">Depth</a></li>
           <li class="wide"><a href="#work">Work</a></li>
-          <li><a href="#writing">Writing</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li class="wide"><a href="#writing">Writing</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -227,6 +228,46 @@
           <p class="note__tags">NIST 800-61 · RACI · SOP</p>
         </article>
       </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Projects.</h2>
+      <p class="section-lede">Things I designed and built, start to finish.</p>
+
+      <article class="project" aria-labelledby="fwallsim-title">
+        <figure class="project__shot">
+          <img src="/assets/projects/fwallsim/hero.jpg" alt="FWallSim: a firewall policy table with an ACCEPT rule, a lab guide with every task ticked green, and the Packet Walk explaining each step" width="2000" height="1162" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="project__head">
+          <h3 class="project__title" id="fwallsim-title">FWallSim.<span>A firewall you learn by building.</span></h3>
+          <p class="project__lede">A FortiGate-style firewall simulator that runs entirely in the browser. Configure it through a GUI and CLI modelled on FortiOS 7.4, send traffic through a built-in lab network, and watch every decision explained. No hardware, licence or account.</p>
+          <p class="project__links">
+            <a class="link" href="https://fwallsim.vercel.app" rel="noopener" target="_blank">Launch the simulator<svg class="chev" viewBox="0 0 8 14" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></a>
+            <a class="link" href="https://github.com/Saaamyak/fwallsim" rel="noopener" target="_blank">Source on GitHub<svg class="chev" viewBox="0 0 8 14" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></a>
+          </p>
+        </div>
+
+        <dl class="specs">
+          <div class="spec"><dt>Labs</dt><dd>13 guided labs and 6 troubleshooting challenges, from first login to BGP. Tasks tick green only when the config and simulated traffic prove it works.</dd></div>
+          <div class="spec"><dt>Packet Walk</dt><dd>Every step a packet takes, explained in plain words: session, DNAT, route, RPF, policy, SNAT. Debug Flow shows the same as <code>diagnose debug flow</code>.</dd></div>
+          <div class="spec"><dt>Private by design</dt><dd>Everything stays in the visitor’s browser. No server, no account, nothing sent anywhere.</dd></div>
+        </dl>
+
+        <div class="project__pair">
+          <figure>
+            <img src="/assets/projects/fwallsim/packet-walk.jpg" alt="Packet Walk: a ping from PC1 to 8.8.8.8 traced through routing, policy and source NAT, step by step" width="1400" height="749" loading="lazy" decoding="async">
+            <figcaption>Packet Walk: routing, policy and NAT, step by step.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/projects/fwallsim/cli.jpg" alt="FortiOS-style CLI: a firewall policy built with config, edit and set, then a live diagnose debug flow trace" width="1400" height="952" loading="lazy" decoding="async">
+            <figcaption>The CLI: FortiOS-style commands and a live debug flow.</figcaption>
+          </figure>
+        </div>
+
+        <p class="project__meta">Covers policies and NAT, address and service objects, Virtual IPs, admin hardening, LDAP, IPsec and SSL-VPN, SD-WAN, OSPF and BGP. Built with React, TypeScript and Vite, tested with Playwright.</p>
+      </article>
     </section>
 
     <!-- Writing -->

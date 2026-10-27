@@ -3,7 +3,7 @@
 > A living checklist. Tick items as they finish and add new ones at the bottom of the right phase.
 > **Keep it current** together with [SESSION_CONTEXT.md](SESSION_CONTEXT.md).
 
-_Last updated: 2026-10-08_
+_Last updated: 2026-10-27_
 
 ## Goal
 
@@ -68,6 +68,13 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] Internal files (`.impeccable/`, `PRODUCT.md`, `DESIGN.md`) kept local only
 - [x] README.md added
 - [x] Merged/old branches deleted (`redesign`, `Test-Portfolio`)
+
+## Projects: FWallSim 🔄 (2026-10-27)
+
+- [x] Understand FWallSim (FortiGate-style simulator, 13 labs + 6 challenges, GUI + CLI, Packet Walk, browser-only); built by Samyak, public repo github.com/Saaamyak/fwallsim
+- [x] Option A: Projects section on the home page with screenshots from the repo, "Launch the simulator" + "Source on GitHub"; nav gets Projects
+- [ ] Preview on branch `projects-fwallsim` → Samyak approves → merge
+- [ ] Later (option C): host at `/fwallsim` on the portfolio domain (Vite `base: '/fwallsim/'`), plus a `/projects/fwallsim` case-study page
 
 ## Next: design improvements (after go-live)
 
