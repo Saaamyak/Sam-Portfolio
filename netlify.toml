@@ -25,10 +25,12 @@
     Cross-Origin-Resource-Policy = "same-origin"
     X-Permitted-Cross-Domain-Policies = "none"
 
+# Assets revalidate on every visit (ETag makes it a cheap 304), so a deploy
+# is never shown with a stale stylesheet.
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 # Old resume links keep working
 [[redirects]]
