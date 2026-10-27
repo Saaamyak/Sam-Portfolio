@@ -76,6 +76,14 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [ ] Preview on branch `projects-fwallsim` → Samyak approves → merge
 - [ ] Later (option C): host at `/fwallsim` on the portfolio domain (Vite `base: '/fwallsim/'`), plus a `/projects/fwallsim` case-study page
 
+## Repo made professional ✅ (2026-10-27)
+
+- [x] Description, website link, topics
+- [x] Wiki + Projects tabs off; auto-delete merged branches
+- [x] Secret scanning + push protection + Dependabot alerts on
+- [x] GitHub Pages disabled (it was a duplicate public site exposing the docs)
+- [x] Docs moved to `docs/`; SECURITY.md; dead CSS removed; .gitignore tidied
+
 ## Next: design improvements (after go-live)
 
 - [ ] Samyak to share ideas; plan the next round here

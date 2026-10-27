@@ -54,9 +54,11 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 | `public/404.html`, `robots.txt`, `sitemap.xml` | Not-found page and search-engine files |
 | `PRODUCT.md` | Product truth: who, why, evidence, what must never be claimed (**local only**) |
 | `.impeccable/` | Design-tool state: direction contract, detector config, review captures (**local only**) |
-| `POA.md` | Plan of action and progress checklist |
+| `docs/POA.md` | Plan of action and progress checklist |
 | `DESIGN.md` | Design system: colours, type scale, spacing, components, rules (**local only**) |
 | `README.md` | Public repo overview: stack, security, structure |
+| `SECURITY.md` | How to report a vulnerability |
+| `docs/` | Handover docs: this file and POA.md |
 
 ## Current state
 
@@ -84,3 +86,4 @@ The personal portfolio of **Samyak Goel**, Senior Security Engineer (detection &
 - **2026-10-09:** Made an anime-style LinkedIn banner (Shinkai-style dawn sky, clouds, ridges, seated engineer with laptop; claims match the resume only). Source `branding/linkedin-banner.html`, output `branding/linkedin-banner.png` (3168×792). `branding/` is local only (gitignored).
 - **2026-10-09:** Banner v2 per Samyak: bright Apple-style daylight (light sky, white clouds, blue haze mountains, dark SF type, frosted tags). Removed SentinelOne and threat hunting. Tags are now Detect (Cortex XDR · XQL · Vision One EDR), Analyse (Malware behaviour · Memory forensics · RCA), Defend (Incident response · FortiGate · ClearPass NAC).
 - **2026-10-27:** Added a **Projects** section featuring FWallSim (Samyak's own FortiGate-style firewall simulator; live at fwallsim.vercel.app, source github.com/Saaamyak/fwallsim). Screenshots copied from the repo into `public/assets/projects/fwallsim/`. Address stays on Vercel for now; hosting it under the portfolio is planned later.
+- **2026-10-27:** Repo made professional: description, website link and topics set; Wiki and Projects tabs off; branches auto-delete after merge; secret scanning, push protection and Dependabot alerts on. **GitHub Pages disabled** (it was publishing the repo root, including these docs, as a second site at saaamyak.github.io/Sam-Portfolio). Handover docs moved to `docs/`; SECURITY.md added; dead CSS removed; .gitignore tidied.
