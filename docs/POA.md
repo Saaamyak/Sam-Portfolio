@@ -69,11 +69,11 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] README.md added
 - [x] Merged/old branches deleted (`redesign`, `Test-Portfolio`)
 
-## Projects: FWallSim 🔄 (2026-10-27)
+## Projects: FWallSim ✅ (2026-10-27)
 
 - [x] Understand FWallSim (FortiGate-style simulator, 13 labs + 6 challenges, GUI + CLI, Packet Walk, browser-only); built by Samyak, public repo github.com/Saaamyak/fwallsim
 - [x] Option A: Projects section on the home page with screenshots from the repo, "Launch the simulator" + "Source on GitHub"; nav gets Projects
-- [ ] Preview on branch `projects-fwallsim` → Samyak approves → merge
+- [x] Previewed and merged (PR #2, 2026-10-27); live on the site
 - [ ] Later (option C): host at `/fwallsim` on the portfolio domain (Vite `base: '/fwallsim/'`), plus a `/projects/fwallsim` case-study page
 
 ## Repo made professional ✅ (2026-10-27)
