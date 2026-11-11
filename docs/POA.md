@@ -84,6 +84,14 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] GitHub Pages disabled (it was a duplicate public site exposing the docs)
 - [x] Docs moved to `docs/`; SECURITY.md; dead CSS removed; .gitignore tidied
 
+## Live-site review fixes 🔄 (2026-10-27)
+
+- [x] Nav aligned with the content edge
+- [x] Counters: fallback so they never stick on a wrong number; real values for screen readers
+- [x] Field-note lead card: ridge no longer behind the text on mobile
+- [x] Stale-CSS bug from Samyak's recording: assets revalidate every visit; CSS/JS versioned with `?v=`
+- [ ] Preview (PR #3) → Samyak approves → merge
+
 ## Next: design improvements (after go-live)
 
 - [ ] Samyak to share ideas; plan the next round here
