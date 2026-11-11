@@ -3,7 +3,7 @@
 > A living checklist. Tick items as they finish and add new ones at the bottom of the right phase.
 > **Keep it current** together with [SESSION_CONTEXT.md](SESSION_CONTEXT.md).
 
-_Last updated: 2026-10-27_
+_Last updated: 2026-11-11_
 
 ## Goal
 
@@ -84,13 +84,24 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 - [x] GitHub Pages disabled (it was a duplicate public site exposing the docs)
 - [x] Docs moved to `docs/`; SECURITY.md; dead CSS removed; .gitignore tidied
 
-## Live-site review fixes 🔄 (2026-10-27)
+## Live-site review fixes ✅ (2026-10-27)
 
 - [x] Nav aligned with the content edge
 - [x] Counters: fallback so they never stick on a wrong number; real values for screen readers
 - [x] Field-note lead card: ridge no longer behind the text on mobile
 - [x] Stale-CSS bug from Samyak's recording: assets revalidate every visit; CSS/JS versioned with `?v=`
-- [ ] Preview (PR #3) → Samyak approves → merge
+- [x] Merged (PR #3, 2026-11-11); live
+
+## Next: improvement backlog (agreed 2026-11-11)
+
+- [ ] Writing section: show latest Medium posts (RSS)
+- [ ] JSON-LD Person schema; apple-touch-icon; Trusted Types in CSP
+- [ ] Sync site with the concise CV (Beltron delivered, FWallSim, new PDF)
+- [ ] Case-study pages for the three field notes
+- [ ] FWallSim page with the demo GIF
+- [ ] "How I work" / architecture section
+- [ ] Custom domain; self-hosted font; dark-background photo; mobile menu
+- [ ] Later: Astro migration; CI checks (links, a11y, Lighthouse)
 
 ## Next: design improvements (after go-live)
 
