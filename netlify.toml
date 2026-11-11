@@ -35,7 +35,12 @@
 # Old resume links keep working
 [[redirects]]
   from = "/files/resume.pdf"
-  to = "/files/Sr.Security_Engineer_Samyak_Goel.pdf"
+  to = "/files/Samyak_Goel_Senior_Security_Engineer.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/files/Sr.Security_Engineer_Samyak_Goel.pdf"
+  to = "/files/Samyak_Goel_Senior_Security_Engineer.pdf"
   status = 301
 
 [[headers]]
