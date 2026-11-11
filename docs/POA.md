@@ -96,7 +96,7 @@ Replace the 2025 portfolio with a site that presents Samyak Goel as a **Senior S
 
 - [ ] Writing section: show latest Medium posts (RSS)
 - [ ] JSON-LD Person schema; apple-touch-icon; Trusted Types in CSP
-- [ ] Sync site with the concise CV (Beltron delivered, FWallSim, new PDF)
+- [x] Sync site with the concise CV: new PDF, NCB added, Beltron delivered (2026-11-11)
 - [ ] Case-study pages for the three field notes
 - [ ] FWallSim page with the demo GIF
 - [ ] "How I work" / architecture section
